@@ -1,34 +1,30 @@
 #include <iostream>
 #include <string>
+#include "b_the_parrots.h"
+#include "c_sea_storm.h"
 
 using namespace std;
 
 int main() {
 
-    int budget (0), nombre(0), prix(0), commission(0), nbPerroquet(0), maxPerroquet(0);
-    string nomDresseur, meilleurDresseur;
+    int choix(0);
+    cout << "**** CODING BATTLE ****" << endl;
+    cout << "Exercice a executer ?" << endl;
+    cin >> choix;
 
-    cin >> budget >> nombre;
+    switch (choix) {
 
-    for (int i(0); i < nombre; i++) {
-
-        cin >> nomDresseur >> prix >> commission;
-
-        nbPerroquet = (budget - commission) / prix;
-
-        if (maxPerroquet < nbPerroquet) {
-
-            meilleurDresseur = nomDresseur;
-            maxPerroquet = nbPerroquet;
-            //cout << nomDresseur;
-        }
+        case 1 :
+            break;
+        case 2 :
+            parrot();
+            break;
+        case 3 :
+            seaStorm();
+            break;
+        default:
+            break;
     }
 
-    if (maxPerroquet == 0) {
-        cout << "Impossible" << endl;
-    } else {
-        cout << maxPerroquet << endl;
-        cout << meilleurDresseur;
-    }
     return 0;
 }
