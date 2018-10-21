@@ -9,7 +9,7 @@ int main() {
 
     int choix(0), stop(0);
     cout << "================== CODING BATTLE ==================" << endl;
-    cout << "Choose your exercice || press 9 to exit " << endl;
+    cout << "Choose your exercice or Press 9 to exit " << endl;
     cin >> choix;
 
     while (!stop) {
