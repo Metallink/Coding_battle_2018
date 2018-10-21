@@ -1,0 +1,9 @@
+//
+// Created by Sameh EL AWADI on 21/10/2018.
+//
+
+#ifndef CODINGBATTLE_A_LOOT_SHARING_H
+#define CODINGBATTLE_A_LOOT_SHARING_H
+
+void loot();
+#endif //CODINGBATTLE_A_LOOT_SHARING_H

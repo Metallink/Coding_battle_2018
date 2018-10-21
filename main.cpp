@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "a_loot_sharing.h"
 #include "b_the_parrots.h"
 #include "c_sea_storm.h"
 
@@ -15,6 +16,7 @@ int main() {
     while (!stop) {
         switch (choix) {
             case 1 :
+                loot();
                 break;
             case 2 :
                 parrot();
